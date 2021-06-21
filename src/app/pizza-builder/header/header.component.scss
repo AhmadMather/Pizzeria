@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: lightgoldenrodyellow;
+  justify-content: flex-end;
+  box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 50%);
+  button {
+    margin: 2em;
+    height: 3em;
+    width: 10em;
+    background-color: transparent;
+    border: solid black 3px;
+    cursor: pointer;
+  }
+}

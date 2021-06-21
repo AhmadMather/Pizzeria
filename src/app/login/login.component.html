@@ -1,0 +1,24 @@
+<div class="authentication">
+  <mat-card class="auth-card">
+    <mat-card-title> The Pizzeria Login </mat-card-title>
+    <mat-card-content>
+      <form class="login-form" [formGroup]="loginForm" (ngSubmit)="login()">
+        <mat-error *ngIf="error">Invalid Username or Password</mat-error>
+        <mat-form-field class="login-input">
+          <mat-label>Username</mat-label>
+          <input matInput formControlName="username" value="" required>
+        </mat-form-field>
+        <mat-form-field class="login-input">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>
+          <button mat-icon-button  id="password-icon" matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+        <mat-card-actions>
+          <button mat-raised-button type="submit" class="submit-login">LOGIN</button>
+        </mat-card-actions>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

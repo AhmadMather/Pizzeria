@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .header {
+    align-self: flex-start;
+    width: 100%;
+  }
+  .pizza {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    justify-content: center;
+    .form-field {
+      width: 100%;
+      text-align: center;
+    }
+    .step-button-container {
+      display: flex;
+      justify-content: center;
+      button {
+        margin: 1em;
+
+      }
+    }
+  }
+}
